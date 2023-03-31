@@ -3,7 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { useTranslation } from 'next-i18next'
 import styles from '@/styles/Home.module.css'
-import { Header } from '../components/Header'
+import { Header } from '@/components/Header'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const { t } = useTranslation('common')
+  console.log(t('title'))
 
   return (
     <>
@@ -137,3 +139,9 @@ export default function Home() {
     </>
   )
 }
+
+export const getServerSideProps = async ({ locale }) => ({
+  props: {
+      ...(await serverSideTranslations(locale, ['common']))
+  }
+});

@@ -1,0 +1,29 @@
+name: Run lint and test build website
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: Set up nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 19
+      
+      - name: Install requirements
+        run: npm Install
+      
+      - name: Lint
+        run: npm next lint
+      
+      - name: Test build
+        run: npm next build --debug

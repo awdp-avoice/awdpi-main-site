@@ -9,7 +9,7 @@ export const Header = ({ heading, title }) => (
       next-language-detector example
       <hr />
     </h2>
-    <h1>{heading}</h1>
+    <h1 className="text-3xl font-bold underline">{heading}</h1>
     <a
       className="github"
       href="//github.com/i18next/next-language-detector"

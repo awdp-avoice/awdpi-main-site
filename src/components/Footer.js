@@ -21,7 +21,7 @@ export const Footer = () => {
         </span>
         {i18nextConfig.i18n.locales.map(locale => {
           if (locale === currentLocale) return null
-          return <LanguageSwitchLink locale={locale} key={locale} />
+          return <LanguageSwitchLink locale={locale} key={locale}/>
         })}
       </p>
       <p>next-i18next v{pkg.version}</p>

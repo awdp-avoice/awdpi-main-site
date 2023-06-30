@@ -27,4 +27,4 @@ const LinkComponent = ({
   )
 }
 
-export default LinkComponent
+export default LinkComponent;

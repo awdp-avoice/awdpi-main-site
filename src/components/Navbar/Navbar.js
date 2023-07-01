@@ -5,12 +5,22 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CloseIcon from '@mui/icons-material/Close';
 import styles from "./Navbar.module.css"
 import SecondPage from '@/pages/[locale]/second-page';
+import {useNavigate} from "react-router-dom";
 
-export const Navbar = () => (
+
+export const Navbar = () => {
+  const routeChange = () => {
+    window.location.href = "https://www.google.com/";
+  }
+  return (
+
   <div className={styles.navbar}>
     <div className={styles.left}>
       <img src="img/AWDPIlogo.png" alt="AWDPIlogo" className={styles.logo}></img>
-      <SearchIcon className={styles.SearchIcon}></SearchIcon>
+      <div className={styles.searchBar}>
+        <SearchIcon className={styles.SearchIcon}></SearchIcon>
+        <input type="text" className={styles.searchInput}  />
+      </div>
     </div>
     <div className={styles.center}>
       <div className={styles.item}>
@@ -25,7 +35,9 @@ export const Navbar = () => (
       </div>
     </div>
     <div className={styles.right}>
-      <CloseIcon className={styles.CloseIcon}></CloseIcon>
+      <img src="img/placeHolder.png" className={styles.placeHolder}/>
+      <CloseIcon className={styles.CloseIcon} onClick={routeChange}></CloseIcon>
     </div>
   </div>
-)
+  )
+}

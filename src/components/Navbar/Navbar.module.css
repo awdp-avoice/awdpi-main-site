@@ -12,38 +12,57 @@
     display: flex;
     align-items: center;
     gap: 10px;
-}
 
-.logo{
+    .logo{
     
+    }
+    
+    .searchBar{
+        border-bottom: 3px solid #153CFF;
+        width: 400px;
+        .SearchIcon{
+            color:#A0CCF2;
+        }
+        
+        .searchInput{
+            background-color:  #F2F1FB;
+            
+        }
+    }
 }
 
-.SearchIcon{
-    color:#A0CCF2;
-}
+
 
 .center{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 55px;
+
+    .item{
+        color: #153CFF;
+        font-size: 20px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
 }
 
-.item{
-    color: #153CFF;
-    font-size: 20px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
+
 
 .right{
     display: flex;
     align-items: center;
     gap: 25px;
+
+    .placeHolder{
+        width: 180px;
+        height: 50px;
+    }
+
+    .CloseIcon{
+        color: red;
+        border: 2px solid red;
+    }
 }
 
-.CloseIcon{
-    color: red;
-    border: 2px solid red;
-}

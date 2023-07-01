@@ -7,6 +7,8 @@ import { Layout } from '../../components/Layout'
 import Link from '../../components/Link'
 import { Navbar } from '@/components/Navbar/Navbar'
 import { Assistance } from '@/components/Assistance/Assistance'
+import { Donate } from '@/components/Donate/Donate'
+import { Events } from '@/components/Events/Events'
 
 const Homepage = () => {
   const { t } = useTranslation(['common', 'footer'])
@@ -16,6 +18,8 @@ const Homepage = () => {
       <Navbar/>
       <Header heading={t('h1')} title={t('title')} headerText = {t('headerText')}/>
       <Assistance assistanceText={t('assistanceText')}/>
+      <Donate />
+      <Events />
     </div>
     
   )

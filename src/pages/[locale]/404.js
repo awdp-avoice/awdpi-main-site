@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next'
 import { getStaticPaths, makeStaticProps } from '../../lib/getStatic'
 
-import { Header } from '../../components/Header'
+import { Header } from '../../components/Header/Header'
 import { Footer } from '../../components/Footer'
 
 import Link from '../../components/Link'

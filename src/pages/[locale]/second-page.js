@@ -6,7 +6,7 @@ import {
   getI18nProps,
 } from '../../lib/getStatic'
 
-import { Header } from '../../components/Header'
+import { Header } from '../../components/Header/Header'
 import { Footer } from '../../components/Footer'
 
 const SecondPage = ({ someOtherData }) => {

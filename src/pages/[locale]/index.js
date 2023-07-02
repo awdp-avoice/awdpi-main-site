@@ -1,39 +1,27 @@
 import { useTranslation } from 'next-i18next'
 import { getStaticPaths, makeStaticProps } from '../../lib/getStatic'
 
-import { Header } from '../../components/Header'
+import { Header } from '../../components/Header/Header'
 import { Layout } from '../../components/Layout'
 
-console.log(Layout)
-
 import Link from '../../components/Link'
+import { NavigationBar } from '@/components/Navbar/Navbar'
+import { Assistance } from '@/components/Assistance/Assistance'
+import { Donate } from '@/components/Donate/Donate'
+import { Events } from '@/components/Events/Events'
 
 const Homepage = () => {
   const { t } = useTranslation(['common', 'footer'])
 
   return (
-    <Layout>
-      <main>
-        {/* <div>
-          <Link href="/second-page">
-            <button type="button">{t('to-second-page')}</button>
-          </Link>
-        </div> */}
-        <div id="our_programs" className='mx-auto text-center'>
-          <h2 className='mx-auto'>Our Programs</h2>
-          <div className='grid grid-rows-2'>
-            <div className='grid grid-cols-2'>
-              <div>Against Violence to Overseas Chinese Women</div>
-              <div>Campaign Against Gender Based Violence</div>
-            </div>
-            <div className='grid grid-cols-2'>
-              <div>Against Violence to Overseas Chinese Women</div>
-              <div>Campaign Against Gender Based Violence</div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </Layout>
+    <div>
+      <NavigationBar/>
+      <Header heading={t('h1')} title={t('title')} headerText = {t('headerText')}/>
+      <Assistance assistanceText={t('assistanceText')}/>
+      <Donate />
+      <Events />
+    </div>
+    
   )
 }
 

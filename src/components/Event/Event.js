@@ -1,18 +1,25 @@
 import React from "react";
 import styles from "src/components/Event/Event.module.css"
+import { Card } from "react-bootstrap";
 
 
+export const Event = ({ item }) => (
 
-export const Event = ({item}) => (
-    
-    <div className={styles.event}>
-        <div className={styles.container}>
-            <time className={styles.date}>{item.date}</time>
-            <h1 className={styles.title}>{item.title}</h1>
-            <p className={styles.description}>{item.description1}</p>
-            <h1 className={styles.title}>{item.location}</h1>
-            <p className={styles.description}>{item.description2}</p>
-        </div>
+    <div >
+        <Card className={styles.event}>
+            <Card.Body>
+                <Card.Title className={styles.date}>{item.date}</Card.Title>
+                <Card.Subtitle className={styles.title}>{item.title}</Card.Subtitle>
+                <Card.Text className={styles.description}>
+                    {item.description1}
+                </Card.Text>
+                <Card.Subtitle className={styles.title}>{item.location}</Card.Subtitle>
+                <Card.Text className={styles.description}>
+                    {item.description2}
+                </Card.Text>
+                <Card.Link href="#" className={styles.description}>More details</Card.Link>
+            </Card.Body>
+        </Card>
     </div>
 
 )

@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "src/components/Assistance/Assistance.module.css"
 import { Aid } from "../Aid/Aid";
+import { Container, Row, Col } from 'react-bootstrap';
+
 
 const data = [
     {
@@ -36,11 +38,19 @@ export const Assistance = ({assistanceText}) => (
             <p className={styles.assistanceText}>{assistanceText}</p>
         </div>
         <div className={styles.aids}>
-            {data.map(item=>(
-                <Aid item={item} key={item.id}/>
+        <Container fluid>
+            <Row>
+                {data.map(item=>(
+                     <Col lg={3} md={6} key={item.id}>
+                        <Aid item={item} key={item.id}/>
+                    </Col>
             )
 
             )}
+            
+            </Row>
+            
+        </Container>
         </div>
     </div>
 )

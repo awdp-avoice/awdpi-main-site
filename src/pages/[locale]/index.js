@@ -9,6 +9,7 @@ import { NavigationBar } from '@/components/Navbar/Navbar'
 import { Assistance } from '@/components/Assistance/Assistance'
 import { Donate } from '@/components/Donate/Donate'
 import { Events } from '@/components/Events/Events'
+import { Achievements } from '@/components/Achievements/Achievements'
 
 const Homepage = () => {
   const { t } = useTranslation(['common', 'footer'])
@@ -17,6 +18,7 @@ const Homepage = () => {
     <div>
       <NavigationBar/>
       <Header heading={t('h1')} title={t('title')} headerText = {t('headerText')}/>
+      <Achievements/>
       <Assistance assistanceText={t('assistanceText')}/>
       <Donate />
       <Events />

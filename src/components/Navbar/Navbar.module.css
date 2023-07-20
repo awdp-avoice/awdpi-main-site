@@ -1,44 +1,99 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.navbar{
-    background: #F2F1FB;
-    display: flex;
-    justify-content: space-between;
-    padding: 0% 3%;
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.navbar {
+  background: #f2f1fb;
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 3%;
 }
 
-.SearchIcon{
-    color:#A0CCF2;
-}
-    
-.searchBar{
-    /* border-bottom: 3px solid #153CFF; */
-    width: 30%;
+.SearchIcon {
+  color: #a0ccf2;
+  margin-left: 2px;
+  margin-top: 8px;
 }
 
-.item{
-    /* color: #153CFF; */
-    font-size: 20px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+.searchBar {
+  width: 30%;
+  border-bottom: 3px solid #153cff;
+  width: 401px;
+  margin-top: -22px;
 }
 
+.searchText {
+  border: none;
+  background-color: transparent;
+  width: 93%;
+  padding-left: 5px;
+  font-size: 18px;
+}
 
-.right{
-    display: flex;
-    align-items: center;
-    gap: 25px;
+.firstItem {
+  height: 26px;
+  width: 79px;
+  color: #153cff;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 40px;
+  margin-top: -10px;
+}
+
+.innerItem {
+  color: #153cff;
+}
+
+.secondItem {
+  height: 26px;
+  width: 79px;
+  color: #153cff;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 42px;
+  margin-top: -10px;
+}
+
+.thirdItem {
+  height: 26px;
+  width: 79px;
+  color: #153cff;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .right .placeHolder {
-    width: 180px;
-    height: 50px;
+  width: 180px;
+  height: 50px;
+  margin-right: -10px;
 }
 
 .right .CloseIcon {
-    color: red;
-    border: 2px solid red;
+  background-color: #ff4646;
+  border-radius: 4px;
+  font-family: "Poppins-Medium", Helvetica;
+  width: 47px;
+  height: 45px;
+  position: relative;
 }
 
+.CloseIcon span {
+  color: #fdfafa;
+  font-size: 40px;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

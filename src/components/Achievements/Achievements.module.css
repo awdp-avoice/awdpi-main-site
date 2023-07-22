@@ -11,7 +11,9 @@
     
 }
 
-
+.item{
+    padding-top: 50px;
+}
 .itemNumber{
     color: #FF6668;
     text-align: center;

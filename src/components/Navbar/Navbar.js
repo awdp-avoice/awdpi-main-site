@@ -14,37 +14,19 @@ import {
   Navbar,
   NavDropdown,
 } from "react-bootstrap";
+import { Poppins } from '@next/font/google'
+
+const poppins = Poppins({
+  subsets:['latin'],
+  variable: '--font-poppins',
+  weight: ['500']
+})
 
 export const NavigationBar = () => {
   const routeChange = () => {
     window.location.href = "https://www.google.com/";
   };
   return (
-    // <div className={styles.navbar}>
-    //   <div className={styles.left}>
-    //     <img src="img/AWDPIlogo.png" alt="AWDPIlogo" className={styles.logo}></img>
-    //     <div className={styles.searchBar}>
-    //       <SearchIcon className={styles.SearchIcon}></SearchIcon>
-    //       <input type="text" className={styles.searchInput}  />
-    //     </div>
-    //   </div>
-    //   <div className={styles.center}>
-    //     <div className={styles.item}>
-    //       <Link href="second-page">Programs</Link>
-    //       <ExpandMoreIcon></ExpandMoreIcon>
-    //     </div>
-    //     <div className={styles.item}>
-    //       <Link href="second-page">About</Link>
-    //     </div>
-    //     <div className={styles.item}>
-    //       <Link href="second-page">Contact</Link>
-    //     </div>
-    //   </div>
-    //   <div className={styles.right}>
-    //     <img src="img/placeHolder.png" className={styles.placeHolder}/>
-    //     <CloseIcon className={styles.CloseIcon} onClick={routeChange}></CloseIcon>
-    //   </div>
-    // </div>
 
     <Navbar expand="lg" className={styles.navbar}>
       <Container fluid>

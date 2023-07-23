@@ -2,7 +2,14 @@ import React from "react";
 import styles from "src/components/Events/Events.module.css"
 import { Event } from "../Event/Event";
 import { Container, Row, Col } from 'react-bootstrap';
+import { Mulish } from '@next/font/google'
 
+const mulish = Mulish({
+    subsets:['latin'],
+    variable: '--font-mulish',
+    weight: ['600','700']
+  })
+  
 const data = [
     {
         id:1,

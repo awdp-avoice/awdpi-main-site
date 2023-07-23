@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "src/components/Event/Event.module.css"
 import { Card } from "react-bootstrap";
+import { Mulish } from 'next/font/google'
 
+const mulish = Mulish({
+    subsets:['latin'],
+    variable: '--font-mulish',
+    weight: ['600','700']
+  })
 
 export const Event = ({ item }) => (
 

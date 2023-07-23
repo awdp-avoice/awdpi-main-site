@@ -3,6 +3,13 @@ import styles from "src/components/Achievements/Achievements.module.css";
 import { Aid } from "../Aid/Aid";
 import { Container, Row, Col } from "react-bootstrap";
 import AutoPlay from "../Partners/Partners";
+import { Mulish } from "@next/font/google";
+
+const mulish = Mulish({
+  subsets: ["latin"],
+  variable: "--font-mulish",
+  weight: ["600", "700"],
+});
 
 export const Achievements = () => (
   <div className={styles.container}>

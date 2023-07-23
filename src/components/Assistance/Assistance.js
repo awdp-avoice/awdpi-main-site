@@ -2,7 +2,13 @@ import React from "react";
 import styles from "src/components/Assistance/Assistance.module.css"
 import { Aid } from "../Aid/Aid";
 import { Container, Row, Col } from 'react-bootstrap';
+import { Poppins } from '@next/font/google'
 
+const poppins = Poppins({
+    subsets:['latin'],
+    variable: '--font-poppins',
+    weight: ['500']
+  })
 
 const data = [
     {

@@ -1,6 +1,12 @@
 import React from "react";
 import styles from "src/components/Aid/Aid.module.css"
+import { Mulish } from '@next/font/google'
 
+const mulish = Mulish({
+    subsets:['latin'],
+    variable: '--font-mulish',
+    weight: ['600']
+  })
 
 
 export const Aid = ({item}) => (

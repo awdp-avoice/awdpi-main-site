@@ -1,5 +1,19 @@
 import React from "react";
 import styles from "src/components/Donate/Donate.module.css"
+import { Mulish } from '@next/font/google'
+import { Poppins } from '@next/font/google'
+
+const poppins = Poppins({
+    subsets:['latin'],
+    variable: '--font-poppins',
+    weight: ['500']
+  })
+const mulish = Mulish({
+    subsets:['latin'],
+    variable: '--font-mulish',
+    weight: ['600','700']
+  })
+
 
 export const Donate = () => (
 

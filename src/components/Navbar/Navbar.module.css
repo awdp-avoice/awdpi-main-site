@@ -41,6 +41,9 @@
 
 .innerItem {
   color: #153cff;
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .secondItem {

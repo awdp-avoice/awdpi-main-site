@@ -14,6 +14,10 @@ import {
   Navbar,
   NavDropdown,
 } from "react-bootstrap";
+import Dropdown from 'react-bootstrap/Dropdown';
+import NavItem from 'react-bootstrap/NavItem';
+import NavLink from 'react-bootstrap/NavLink';
+
 import { Poppins } from '@next/font/google'
 
 const poppins = Poppins({
@@ -51,18 +55,15 @@ export const NavigationBar = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <NavDropdown
-              title={"Programs"}
-              id="navbarScrollingDropdown"
-              className={styles.firstItem}
-            >
-              <NavDropdown.Item href="#action3" className={styles.innerItem}>
-                Action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4" className={styles.innerItem}>
-                Another action
-              </NavDropdown.Item>
-            </NavDropdown>
+
+            <Dropdown as={NavItem}>
+              <Dropdown.Toggle as={NavLink} className={styles.firstItem}>Programs</Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item className={styles.innerItem}>program1</Dropdown.Item>
+                <Dropdown.Item className={styles.innerItem}>program2</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+         
 
             <Nav.Link href="#action2" className={styles.secondItem}>
               About

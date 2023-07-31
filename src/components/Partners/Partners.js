@@ -20,19 +20,19 @@ export default class AutoPlay extends Component {
       <div>
         <Slider {...settings}>
           <div>
-            <img className={styles.imgItem} src="img/Partners/1.png"></img>
+            <img className={styles.imgItem} src="static/img/Partners/1.png"></img>
           </div>
           <div>
-            <img className={styles.imgItem} src="img/Partners/2.png"></img>
+            <img className={styles.imgItem} src="static/img/Partners/2.png"></img>
           </div>
           <div>
-            <img className={styles.imgItem} src="img/Partners/3.png"></img>
+            <img className={styles.imgItem} src="static/img/Partners/3.png"></img>
           </div>
           <div>
-            <img className={styles.imgItem} src="img/Partners/4.png"></img>
+            <img className={styles.imgItem} src="static/img/Partners/4.png"></img>
           </div>
           <div>
-            <img className={styles.imgItem} src="img/Partners/5.png"></img>
+            <img className={styles.imgItem} src="static/img/Partners/5.png"></img>
           </div>
           
         </Slider>

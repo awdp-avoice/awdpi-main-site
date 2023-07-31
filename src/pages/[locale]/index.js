@@ -13,7 +13,6 @@ import { Achievements } from '@/components/Achievements/Achievements'
 
 const Homepage = () => {
   const { t } = useTranslation(['common', 'footer'])
-
   return (
     <div>
       <NavigationBar/>

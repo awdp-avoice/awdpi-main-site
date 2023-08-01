@@ -13,25 +13,25 @@ const poppins = Poppins({
 const data = [
     {
         id:1,
-        img:"img/LegalAid.png",
+        img:"static/img/LegalAid.png",
         title: "Legal Aid",
         description:"dadklfdajlbhieandlgadnglbif"
     },
     {
         id:2,
-        img:"img/Language.png",
+        img:"static/img/Language.png",
         title: "Language Support",
         description:"dadklfdajlbhieandlgadnglbif"
     },
     {
         id:3,
-        img:"img/FinancialAid.png",
+        img:"static/img/FinancialAid.png",
         title: "Financial Support",
         description:"dadklfdajlbhieandlgadnglbif"
     },
     {
         id:4,
-        img:"img/Psych.png",
+        img:"static/img/Psych.png",
         title: "Psychological Counselling",
         description:"dadklfdajlbhieandlgadnglbif"
     }

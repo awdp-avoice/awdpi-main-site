@@ -34,9 +34,9 @@ export const NavigationBar = () => {
 
     <Navbar expand="lg" className={styles.navbar}>
       <Container fluid>
-        <Navbar.Brand href="/home">
+        <Navbar.Brand href="/">
           <img
-            src="img/AWDPIlogo.png"
+            src="/static/img/AWDPIlogo.png"
             width="68"
             height="87"
             className="d-inline-block align-top"
@@ -65,7 +65,7 @@ export const NavigationBar = () => {
             </Dropdown>
          
 
-            <Nav.Link href="#action2" className={styles.secondItem}>
+            <Nav.Link href="/about" className={styles.secondItem}>
               About
             </Nav.Link>
 
@@ -75,7 +75,7 @@ export const NavigationBar = () => {
           </Nav>
 
           <div className={styles.right}>
-            <img src="img/placeHolder.png" className={styles.placeHolder} />
+            <img src="static/img/placeHolder.png" className={styles.placeHolder} />
             <div className={styles.CloseIcon}>
               <span>X</span>
             </div>

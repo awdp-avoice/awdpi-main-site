@@ -1,10 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import CloseIcon from "@mui/icons-material/Close";
 import styles from "./Navbar.module.css";
-import SecondPage from "@/pages/[locale]/second-page";
 import {
   InputGroup,
   Button,
@@ -19,11 +16,17 @@ import NavItem from 'react-bootstrap/NavItem';
 import NavLink from 'react-bootstrap/NavLink';
 
 import { Poppins } from '@next/font/google'
+import { Mulish } from '@next/font/google'
 
 const poppins = Poppins({
   subsets:['latin'],
   variable: '--font-poppins',
   weight: ['500']
+})
+const mulish = Mulish({
+  subsets:['latin'],
+  variable: '--font-mulish',
+  weight: ['600','700']
 })
 
 export const NavigationBar = () => {
@@ -56,7 +59,7 @@ export const NavigationBar = () => {
             navbarScroll
           >
 
-            <Dropdown as={NavItem}>
+            <Dropdown as={NavItem} >
               <Dropdown.Toggle as={NavLink} className={styles.firstItem}>Programs</Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item className={styles.innerItem}>program1</Dropdown.Item>
@@ -75,10 +78,9 @@ export const NavigationBar = () => {
           </Nav>
 
           <div className={styles.right}>
-            <img src="static/img/placeHolder.png" className={styles.placeHolder} />
-            <div className={styles.CloseIcon}>
-              <span>X</span>
-            </div>
+            <button className={styles.contributeBtn}>Contribute</button>
+            <button className={styles.closeBtn} onClick={routeChange}><span>X</span></button>
+            
           </div>
         </Navbar.Collapse>
       </Container>

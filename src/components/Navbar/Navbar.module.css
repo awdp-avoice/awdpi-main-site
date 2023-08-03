@@ -80,27 +80,55 @@
   gap: 25px;
 }
 
-.right .placeHolder {
-  width: 180px;
-  height: 50px;
-  margin-right: -10px;
+
+
+.contributeBtn{
+  width: 200px;
+  height: 60px;
+  padding:10px 56px;
+  border-radius: 6px;
+  background-color: #FFD627;
+  font-family: var(--font-mulish);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; 
+  color: #5F5F5F;
+}
+.contributeBtn:hover{
+  background-color: transparent;
+  color: #FFD627;
+  border-bottom: 2px solid #FFD627;
 }
 
-.right .CloseIcon {
-  background-color: #ff4646;
-  border-radius: 4px;
+.closeBtn{
+  background-color: #FF4646;
+  border-radius: 6px;
+  width: 56px;
+  height: 56px;
+  color: #FEFBFB;
   font-family: var(--font-poppins);
-  width: 47px;
-  height: 45px;
-  position: relative;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-.CloseIcon span {
-  color: #fdfafa;
-  font-size: 40px;
-  font-weight: 500;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.closeBtn:hover{
+  border-radius: 6px;
+  background-color: #FF4646;
+  width: 95px;
+  height: 56px;
+  padding: 10px;
+  font-family: var(--font-mulish);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; 
+}
+.closeBtn:hover span {
+  display: none
+}
+.closeBtn:hover:before{
+  content:"Exit"
 }

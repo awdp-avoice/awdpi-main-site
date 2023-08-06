@@ -7,6 +7,7 @@ import { Questions } from '@/components/Questions/Questions'
 import { Aboutaids } from '@/components/Aboutaids/Aboutaids'
 import { Map } from '@/components/Map/Map'
 import { Chart } from '@/components/Chart/Chart'
+import { Faq } from '@/components/Faq/Faq'
 
 
 const About = () => {
@@ -19,6 +20,7 @@ const About = () => {
         <Chart />
         <Map />
         <Aboutaids />
+        <Faq / >
         <Questions/>
       </div>
       

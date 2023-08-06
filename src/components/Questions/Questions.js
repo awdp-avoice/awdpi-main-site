@@ -25,10 +25,7 @@ export const Questions = () => (
     <p className={styles.questionText}>Get to know more about our donation process， and <br/>learn how we will protect you.</p>
     <div className={styles.questionTitle}>Questions</div>
       <Question/>
-    
-      
-  
-      
+         
     </div>
 )
 

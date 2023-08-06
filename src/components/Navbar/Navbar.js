@@ -40,26 +40,23 @@ export const NavigationBar = () => {
         <Navbar.Brand href="/">
           <img
             src="/static/img/AWDPIlogo.svg"
-            width="68"
-            height="87"
-            className="d-inline-block align-top"
+            width="120"
+            height="60"
+            className="ms-auto"
             alt="AWDPI logo"
           />
-          
         </Navbar.Brand>
+        
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <InputGroup className={`d-flex ${styles.searchBar}`}>
+        <Navbar.Collapse id="navbarScroll" >
+          <InputGroup className={styles.inputGroup}>
+            <div className={styles.searchBar}>
             <SearchIcon className={styles.SearchIcon} />
             <input className={styles.searchText}></input>
+            </div>
           </InputGroup>
-
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
-            navbarScroll
-          >
-
+          
+          <div className={styles.center}>
             <Dropdown as={NavItem} >
               <Dropdown.Toggle as={NavLink} className={styles.firstItem}>Programs</Dropdown.Toggle>
               <Dropdown.Menu>
@@ -68,7 +65,6 @@ export const NavigationBar = () => {
               </Dropdown.Menu>
             </Dropdown>
          
-
             <Nav.Link href="/about" className={styles.secondItem}>
               About
             </Nav.Link>
@@ -76,15 +72,17 @@ export const NavigationBar = () => {
             <Nav.Link href="/contact" className={styles.thirdItem}>
               Contact
             </Nav.Link>
-          </Nav>
-
-          <div className={styles.right}>
+            </div>
+          
+         
+          <div className={`me-auto, ${styles.right}`}>
             <button className={styles.contributeBtn}>Contribute</button>
             <button className={styles.closeBtn} onClick={routeChange}><span>X</span></button>
             
           </div>
         </Navbar.Collapse>
       </Container>
+      
     </Navbar>
   );
 };

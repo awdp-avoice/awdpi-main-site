@@ -1,0 +1,25 @@
+
+.mapContainer{
+    background-color: #F2F1FB;
+    padding: 5% 3%
+}
+
+.title{
+    color: #FF5678;
+    font-family: var(--font-mulish);
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.content{
+    width: 80%;
+    color: #4E55FE;
+    font-family: var(--font-poppins);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px; 
+}

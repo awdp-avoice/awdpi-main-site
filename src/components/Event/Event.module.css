@@ -5,7 +5,11 @@
     font-display: column;
     justify-content: center;
     background-color: #F2F1FB;
-    
+    border-radius: 0% !important;
+}
+
+.eventBody:hover{
+    border: #153CFF 5px solid;
 }
 
 .date{

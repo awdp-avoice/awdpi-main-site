@@ -11,7 +11,7 @@ const mulish = Mulish({
 
 
 export const Question = () => {
-    const [activeIndex, setActiveIndex] = useState(-1);
+   const [activeIndex, setActiveIndex] = useState(-1);
    const handleClick = (index) => {
       setActiveIndex(index === activeIndex ? -1 : index);
    };

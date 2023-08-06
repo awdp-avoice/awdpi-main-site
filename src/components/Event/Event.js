@@ -13,7 +13,7 @@ export const Event = ({ item }) => (
 
     <div >
         <Card className={styles.event}>
-            <Card.Body>
+            <Card.Body className={styles.eventBody}>
                 <Card.Title className={styles.date}>{item.date}</Card.Title>
                 <Card.Subtitle className={styles.title}>{item.title}</Card.Subtitle>
                 <Card.Text className={styles.description}>

@@ -39,12 +39,13 @@ export const NavigationBar = () => {
       <Container fluid>
         <Navbar.Brand href="/">
           <img
-            src="/static/img/AWDPIlogo.png"
+            src="/static/img/AWDPIlogo.svg"
             width="68"
             height="87"
             className="d-inline-block align-top"
             alt="AWDPI logo"
           />
+          
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -72,7 +73,7 @@ export const NavigationBar = () => {
               About
             </Nav.Link>
 
-            <Nav.Link href="#action2" className={styles.thirdItem}>
+            <Nav.Link href="/contact" className={styles.thirdItem}>
               Contact
             </Nav.Link>
           </Nav>

@@ -1,0 +1,92 @@
+.helpLineContainer {
+  padding: 10% 5%;
+  background-color: #fefbfb;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.officeCard {
+  display: flex;
+  width: 391px;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 8px;
+  border: 2px solid #4e55fe;
+  background: rgba(255, 255, 255, 0);
+}
+.officeCard h2 {
+  color: #1f1f1f;
+  font-family: var(--font-lato);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.officeCard p {
+  color: #000;
+  font-feature-settings: "liga" off;
+
+  /* P */
+  font-family: var(--font-lato);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.officeSelect {
+  padding: 32px;
+}
+.officeSelect h2 {
+  color: #1f1f1f;
+  font-family: var(--font-lato);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.officeSelect p {
+  color: var(--laerdal-black, #1f1f1f);
+  font-feature-settings: "liga" off;
+
+  /* P */
+  font-family: var(--font-lato);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.dropdownButton {
+  width: 373px;
+  height: 56px;
+  text-align: left;
+  border-radius: 8px !important;
+  border: 1px solid #949494;
+  background: #fdfdfd !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.dropdownButton div {
+  color: #949494;
+  font-feature-settings: "liga" off;
+  /* P */
+  font-family: var(--font-lato);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+
+.dropdownButton::after {
+  display: none !important;
+}
+
+.dropdownButton:hover {
+  border: 1px solid #949494 !important;
+}

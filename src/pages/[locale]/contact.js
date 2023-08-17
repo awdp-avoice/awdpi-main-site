@@ -5,6 +5,7 @@ import { Header } from "../../components/Header/Header";
 import { useTranslation } from "next-i18next";
 import { Faq } from "@/components/Faq/Faq";
 import { HelpCenter } from "@/components/HelpCenter/HelpCenter";
+import { HelpLine } from "@/components/HelpLine/HelpLine";
 
 const Contact = () => {
   const { t } = useTranslation(["contact", "footer"]);
@@ -19,6 +20,7 @@ const Contact = () => {
       />
       <HelpCenter />
       <Faq />
+      <HelpLine />
     </div>
   );
 };

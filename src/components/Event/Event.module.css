@@ -1,45 +1,45 @@
-
-
-.event{
-    display:flex;
-    font-display: column;
-    justify-content: center;
-    background-color: #F2F1FB;
-    border-radius: 0% !important;
+.event {
+  display: flex;
+  font-display: column;
+  justify-content: center;
+  background-color: #f2f1fb;
+  border-radius: 0% !important;
 }
 
-.eventBody:hover{
-    border: #153CFF 5px solid;
+.eventBody:hover {
+  border: 5px solid #153cff;
+  background: #f2f1fb;
+  box-shadow: 5px 32px 63px -8px rgba(0, 0, 0, 0.25);
 }
 
-.date{
-    color: #153CFF;
-    font-size: 64px;
-    font-family: var(--font-mulish);
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 25px;
+.date {
+  color: #153cff;
+  font-size: 64px;
+  font-family: var(--font-mulish);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 25px;
 }
 
-.title{
-    color: #153CFF;
-    font-size: 36px;
-    font-family: var(--font-mulish);
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 25px;
+.title {
+  color: #153cff;
+  font-size: 36px;
+  font-family: var(--font-mulish);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 25px;
 }
 
-.description{
-    display: flex;
-    flex-direction: column;
-    color: #153CFF;
-    font-size: 24px;
-    font-family: var(--font-mulish);
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 40px;
+.description {
+  display: flex;
+  flex-direction: column;
+  color: #153cff;
+  font-size: 24px;
+  font-family: var(--font-mulish);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 40px;
 }

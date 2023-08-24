@@ -3,7 +3,6 @@ import styles from "src/components/Chart/Chart.module.css";
 import { Mulish } from "@next/font/google";
 import { Poppins } from "@next/font/google";
 import { AreaCharts } from "../AreaCharts/AreaCharts";
-import { render } from "react-dom";
 
 const poppins = Poppins({
   subsets: ["latin"],

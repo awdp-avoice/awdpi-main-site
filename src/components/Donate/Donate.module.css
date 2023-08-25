@@ -1,39 +1,76 @@
-
-
-.container{
-    position: relative;
-    background-color: #F2F1FB;;
+.container {
+  position: relative;
+  background-color: #f2f1fb;
 }
 
-.donateText{
-    color: #153CFF;
-    font-size: 45px;
-    font-family: var(--font-poppins);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 100%;
-    padding: 100px 5% 30px;
+.donateText {
+  color: #153cff;
+  font-size: 45px;
+  font-family: var(--font-poppins);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  padding: 100px 5% 30px;
 }
 
-.donateTitle{
-    color: #FF5678;
-    font-size: 120px;
-    font-family: var(--font-mulish);
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    padding: 10px 5%;
+.donateTitle {
+  display: flex;
+  align-items: center;
 }
 
-.donateSubtitle{
-    color: #FFC9C9;
-    font-size: 90px;
-    font-family: var(--font-mulish);
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    padding: 0px 5% 50px;
+.donateTitle a:link {
+  color: #ff5678;
+  font-size: 120px;
+  font-family: var(--font-mulish);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 10px 5%;
+  text-decoration: none;
+}
 
+.donateTitle a,
+.donateTitle a:visited,
+.donateTitle a:hover,
+.donateTitle a:active {
+  color: #ff5678;
+}
+
+.donateTitle svg {
+  display: inline;
+}
+
+.donateSubtitle {
+  display: flex;
+  align-items: center;
+  padding: 10px 5% 100px;
+}
+
+.donateSubtitle svg {
+  display: inline;
+}
+
+.donateSubtitle a,
+.donateSubtitle a:visited {
+  color: #ffc9c9;
+  font-size: 90px;
+  font-family: var(--font-mulish);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.donateSubtitle a:hover,
+.donateSubtitle a:active {
+  color: #ff5678;
+  font-family: var(--font-mulish);
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-right: 10px;
 }

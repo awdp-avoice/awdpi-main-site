@@ -70,46 +70,48 @@ export const Faq = () => {
 
       <div className={styles.questionsContainer}>
         {items1.map((item, index) => (
-          <div key={item.title}>
-            <button
-              onClick={() => handleClick(index)}
-              className={styles.questionBtn}
-            >
-              {item.question}
-              {index === activeIndex ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M5 12C5 11.4477 5.44772 11 6 11H18C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13H6C5.44772 13 5 12.5523 5 12Z"
-                    fill="#1F1F1F"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13 6C13 5.44772 12.5523 5 12 5C11.4477 5 11 5.44772 11 6V11L6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44771 13 6 13L11 13V18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18V13L18 13C18.5523 13 19 12.5523 19 12C19 11.4477 18.5523 11 18 11L13 11V6Z"
-                    fill="#1F1F1F"
-                  />
-                </svg>
+          <React.Fragment key={index}>
+            <div onClick={() => handleClick(index)}>
+              <button className={styles.questionBtn}>
+                {item.question}
+                {index === activeIndex ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5 12C5 11.4477 5.44772 11 6 11H18C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13H6C5.44772 13 5 12.5523 5 12Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M13 6C13 5.44772 12.5523 5 12 5C11.4477 5 11 5.44772 11 6V11L6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44771 13 6 13L11 13V18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18V13L18 13C18.5523 13 19 12.5523 19 12C19 11.4477 18.5523 11 18 11L13 11V6Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                )}
+              </button>
+              {index === activeIndex && (
+                <p className={styles.answer}>{item.answer}</p>
               )}
-            </button>
-            {index === activeIndex && (
-              <p className={styles.answer}>{item.answer}</p>
+            </div>
+            {index === Math.round(items1.length / 2 - 1) && (
+              <div className={styles.columnBreak}></div>
             )}
-          </div>
+          </React.Fragment>
         ))}
       </div>
 

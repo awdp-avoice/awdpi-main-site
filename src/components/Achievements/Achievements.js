@@ -28,10 +28,6 @@ export const Achievements = () => (
             <h1 className={styles.itemNumber}>10+</h1>
             <p className={styles.itemName}>Global Communities</p>
           </Col>
-          <Col lg={3} md={6} className={styles.item}>
-            <h1 className={styles.itemNumber}>400+</h1>
-            <p className={styles.itemName}>Oversea Partners</p>
-          </Col>
         </Row>
         <Row>
           <Col lg={3} md={6} className={styles.item}>
